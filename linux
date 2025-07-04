@@ -29,3 +29,6 @@ id
 whoami
 
 cat user.txt
+
+grep '^michael:' /etc/shadow > shadow_michael
+unshadow passwd_michael shadow_michael > michael_unshadowed
