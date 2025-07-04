@@ -1,0 +1,19 @@
+broken access control
+
+cryptographic failures
+
+injection
+
+insecure design
+
+security misconfiguration
+
+vulnerable and outdated components
+
+identification and authentication failures
+
+software and data integrity failures
+
+security logging and monitoring failures
+
+server-side request forgery (ssrf)
