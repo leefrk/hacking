@@ -2,6 +2,8 @@ uname -a
 
 ip link show
 
+ip addr show
+
 ss -tlpn
 
 echo 'hello' > hello.txt
