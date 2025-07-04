@@ -1,3 +1,11 @@
+uname -a
+
+ip link show
+
+ss -tlpn
+
+echo 'hello' > hello.txt
+
 echo "10.10.11.176 health.htb" | sudo tee -a /etc/hosts
 
 apt list python3 --installed
@@ -9,3 +17,7 @@ find ~ -name "example.txt"
 scp file.txt username@192.168.1.2:/home/username/
 
 ssh -i root_key root@health.htb
+
+printenv
+
+cat user.txt
