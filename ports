@@ -1,0 +1,13 @@
+tcp 23 telnet
+
+tcp 22 ssh
+
+tcp 21 ftp
+
+tcp 3389 rdp
+
+tcp 445, 137, 138, 139 smb
+
+tcp 135 rpc
+
+tcp 389, 636 ldap
