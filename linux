@@ -22,4 +22,10 @@ ssh -i root_key root@health.htb
 
 printenv
 
+su root
+
+id
+
+whoami
+
 cat user.txt
