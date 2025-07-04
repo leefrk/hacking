@@ -5,3 +5,5 @@ apt list python3 --installed
 apt install [package_name]
 
 find ~ -name "example.txt"
+
+scp file.txt username@192.168.1.2:/home/username/
