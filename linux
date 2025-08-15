@@ -28,6 +28,8 @@ id
 
 whoami
 
+sysinfo
+
 cat user.txt
 
 grep '^michael:' /etc/shadow > shadow_michael
