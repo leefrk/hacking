@@ -1,0 +1,11 @@
+wget https://example.com/path/to/file.txt
+
+curl -o my_data.txt https://example.com/data.txt
+
+iwr -Uri "<URL_of_file>" -OutFile "<Local_destination_path_and_filename>"
+
+scp /path/to/local/file username@server_ip:/path/to/remote/directory
+scp username@server_ip:/path/to/remote/file /path/to/local/directory
+
+smbclient //server/share -c 'put localfile'
+smbget smb://server/share/file -U user
