@@ -1,17 +1,14 @@
 uname -a
 
 ip link show
-
 ip addr show
 
 ss -tlpn
 
 echo 'hello' > hello.txt
-
 echo "10.10.11.176 health.htb" | sudo tee -a /etc/hosts
 
 apt list python3 --installed
-
 apt install [package_name]
 
 find ~ -name "example.txt"
