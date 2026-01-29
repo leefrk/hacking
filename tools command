@@ -37,7 +37,7 @@ smbclient -L [TARGET-IP] -N
 smbclient //[TARGET-IP]/[SHARE] -N
 smbclient -L [TARGET-IP] -U [USERNAME]
 
-xfreerdp /v:[TARGET-IP] /cert:ignore /u:Administrator
+xfreerdp /v:[TARGET-IP] /cert:ignore /u:Administrator /p:Password
 
 git clone https://github.com/lgandx/Responder
 sudo python3 Responder.py -I tun0
