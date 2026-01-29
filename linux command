@@ -1,4 +1,10 @@
+hostname
+
 uname -a
+
+cat /etc/issue
+
+cat /proc/version
 
 ip link show
 ip addr show
@@ -19,15 +25,31 @@ ssh -i root_key root@health.htb
 
 printenv
 
+ps aux
+
+ifconfig
+
+netstat -au
+
+sudo -l
+
 su root
 
 id
+
+getuid
 
 whoami
 
 sysinfo
 
 cat user.txt
+
+find / -name flag1.txt
+
+df -h
+
+du -sh
 
 grep '^michael:' /etc/shadow > shadow_michael
 unshadow passwd_michael shadow_michael > michael_unshadowed
